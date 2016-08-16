@@ -1,0 +1,46 @@
+
+{{#if addNewArticle}}
+  <h1>New Article</h1>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="titleListView">List View Title</label>
+        {{input value=titleListView id="titleListView"}}
+      </div>
+
+      <div class="form-group">
+        <label for="titleDetailView">Detail View Title</label>
+        {{input value=titleDetailView id="titleDetailView"}}
+      </div>
+
+      <div class="form-group">
+        <label for="category">Category</label>
+        {{input value=category id="category"}}
+      </div>
+
+      <div class="form-group">
+        <label for="timestamp">Date</label>
+        {{input value=timestamp id="timestamp"}}
+      </div>
+
+      <div class="form-group">
+        <label for="author">Author</label>
+        {{input value=author id="author"}}
+      </div>
+
+      <div class="form-group">
+        <label for="bodyCopy">Article Copy</label>
+        {{input value=bodyCopy id="bodyCopy"}}
+      </div>
+
+      <div class="form-group">
+        <label for="imageURL">Image URL</label>
+        {{input value=imageURL id="imageURL"}}
+      </div>
+
+      <button {{action 'save'}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'articleFormShow'}}>New Article</button>
+{{/if}}
