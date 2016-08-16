@@ -1,13 +1,12 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  addNewArticle: false,
+  showUpdateForm: false,
   actions: {
-    articleFormShow() {
-      this.set('addNewArticle', true);
+    showUpdateForm() {
+      this.set('showUpdateForm', true);
     },
-
-    save() {
+    update(article) {
       var params = {
         titleListView: this.get('titleListView')? this.get('titleListView') : "",
         titleDetailView: this.get('titleDetailView')? this.get('titleDetailView') : "",
@@ -17,8 +16,8 @@ export default Ember.Component.extend({
         bodyCopy: this.get('bodyCopy')? this.get('bodyCopy') : "",
         imageURL: this.get('imageURL')? this.get('imageURL') : "",
       };
-      this.set('addNewArticle', false);
-      this.sendAction('save', params);
+      this.set('showUpdateForm', false);
+      this.sendAction('update', article, params);
     }
   }
 });

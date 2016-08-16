@@ -7,5 +7,6 @@
     <h6 class="author">{{article.author}}</h6>
     <h6 class="timestamp">{{article.timestamp}}</h6>
   </div>
+  {{update-article article=article update="update"}}
   <button {{action 'delete' article}}>Delete</button>
 </div>
