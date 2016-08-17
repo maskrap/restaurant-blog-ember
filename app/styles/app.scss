@@ -145,6 +145,7 @@ a {
 	flex:1 0 100%;
 	flex-wrap:wrap; // must be there to allow the navigation to go next line
 	background-color:#fff;
+  align-items: baseline;
 
 	@media all and (min-width:30em){
 

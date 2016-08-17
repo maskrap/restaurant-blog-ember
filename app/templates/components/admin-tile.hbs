@@ -1,11 +1,10 @@
 <div class="list-block">
+  <span class="category-container"><h5 class="category image-overlay-text">{{article.category}}</h5></span>
   <img src="{{article.listImageURL}}" alt="{{article.titleListView}}" class="list-view-image">
-  <h5 class="category">{{article.category}}</h5>
-  <h3 class="list-view-title image-overlay-text">{{article.titleListView}}</h3>
-  <hr>
+  <h3 class="list-view-title">{{article.titleListView}}</h3>
   <div class="by-line">
-    <h6 class="author">{{article.author}}</h6>
-    <h6 class="timestamp">{{article.timestamp}}</h6>
+    <span class="author">{{article.author}}</span>
+    <span class="timestamp">{{article.timestamp}}</span>
   </div>
   {{update-article article=article update="update"}}
   <button {{action 'delete' article}}>Delete</button>
