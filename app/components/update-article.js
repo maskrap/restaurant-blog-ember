@@ -15,6 +15,7 @@ export default Ember.Component.extend({
         author: this.get('author')? this.get('author') : "",
         bodyCopy: this.get('bodyCopy')? this.get('bodyCopy') : "",
         imageURL: this.get('imageURL')? this.get('imageURL') : "",
+        listImageURL: this.get('listImageURL')? this.get('imageURL') : "",
       };
       this.set('showUpdateForm', false);
       this.sendAction('update', article, params);

@@ -7,5 +7,6 @@ export default DS.Model.extend({
   timestamp: DS.attr(),
   author: DS.attr(),
   bodyCopy: DS.attr(),
-  imageURL: DS.attr()
+  imageURL: DS.attr(),
+  listImageURL: DS.attr()
 });
