@@ -14,10 +14,6 @@ body {
     font-size: 20px;
     font-size: 1rem;
     line-height: 1.4;
-    max-width: 1200px;
-    padding: 0 20px;
-    position: relative;
-    margin: 0 auto;
 }
 
 * {
@@ -67,7 +63,10 @@ a {
 
 .wrapper {
   @include flexbox();
-
+  max-width: 1200px;
+  padding: 0 20px;
+  position: relative;
+  margin: 0 auto;
 }
 
 .list-block {
@@ -175,7 +174,7 @@ a {
 	position:relative;
 	z-index:902;
 	display:flex;
-	flex:2 0 20%;
+	flex:2 0 auto;
 	justify-content:flex-start;
 	align-items:center;
 	padding:0;
@@ -185,7 +184,7 @@ a {
 
 	@media all and (min-width:30em) {
 
-		flex:1 0 5em;
+		flex:1 0 auto;
 		justify-content:center;
 
 	}
@@ -248,7 +247,8 @@ a {
 
 .navigation-container {
 	display:flex;
-	flex:1 0 100%;
+	flex:1 0 5rem;
+  max-width: 1200px;
 
 	@media all and (min-width:30em) {
 		flex:1 1 90%;
