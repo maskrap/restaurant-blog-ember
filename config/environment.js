@@ -14,10 +14,10 @@ module.exports = function(environment) {
     },
 
     firebase: {
-      apiKey: "AIzaSyC6SIvvMyovBek-sdRkhoMvE6RWLpr1c-A",
-      authDomain: "bustle-clone-470da.firebaseapp.com",
-      databaseURL: "https://bustle-clone-470da.firebaseio.com",
-      storageBucket: "bustle-clone-470da.appspot.com",
+      apiKey: "AIzaSyBrYTTAIgsF-XC61LNvaOQ1-_mHDUrofWo",
+      authDomain: "portland-food-blog.firebaseapp.com",
+      databaseURL: "https://portland-food-blog.firebaseio.com",
+      storageBucket: "",
     },
 
     APP: {

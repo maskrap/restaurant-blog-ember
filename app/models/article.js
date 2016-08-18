@@ -8,5 +8,6 @@ export default DS.Model.extend({
   author: DS.attr(),
   bodyCopy: DS.attr(),
   imageURL: DS.attr(),
-  listImageURL: DS.attr()
+  listImageURL: DS.attr(),
+  comments: DS.hasMany('comment', { async: true })
 });
